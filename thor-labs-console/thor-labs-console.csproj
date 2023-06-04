@@ -1,0 +1,167 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>thor_labs_console</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Thorlabs.MotionControl.Benchtop.BrushlessMotorCLI">
+      <HintPath>..\Includes\DLLs\x64\Thorlabs.MotionControl.Benchtop.BrushlessMotorCLI.dll</HintPath>
+    </Reference>
+    <Reference Include="Thorlabs.MotionControl.Benchtop.BrushlessMotorUI">
+      <HintPath>..\Includes\DLLs\x64\Thorlabs.MotionControl.Benchtop.BrushlessMotorUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Thorlabs.MotionControl.DeviceManagerCLI">
+      <HintPath>..\Includes\DLLs\x64\Thorlabs.MotionControl.DeviceManagerCLI.dll</HintPath>
+    </Reference>
+    <Reference Include="Thorlabs.MotionControl.DeviceManagerUI">
+      <HintPath>..\Includes\DLLs\x64\Thorlabs.MotionControl.DeviceManagerUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Thorlabs.MotionControl.GenericMotorCLI">
+      <HintPath>..\Includes\DLLs\x64\Thorlabs.MotionControl.GenericMotorCLI.dll</HintPath>
+    </Reference>
+    <Reference Include="Thorlabs.MotionControl.GenericMotorUI">
+      <HintPath>..\Includes\DLLs\x64\Thorlabs.MotionControl.GenericMotorUI.dll</HintPath>
+    </Reference>
+    <Reference Include="ThorLabs.MotionControl.KCube.DCServoCLI">
+      <HintPath>..\Includes\DLLs\x64\ThorLabs.MotionControl.KCube.DCServoCLI.dll</HintPath>
+    </Reference>
+    <Reference Include="Thorlabs.MotionControl.KCube.DCServoUI">
+      <HintPath>..\Includes\DLLs\x64\Thorlabs.MotionControl.KCube.DCServoUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Thorlabs.MotionControl.ModularRackCLI">
+      <HintPath>..\Includes\DLLs\x64\Thorlabs.MotionControl.ModularRackCLI.dll</HintPath>
+    </Reference>
+    <Reference Include="Thorlabs.MotionControl.PrivateInternal">
+      <HintPath>..\Includes\DLLs\x64\Thorlabs.MotionControl.PrivateInternal.dll</HintPath>
+    </Reference>
+    <Reference Include="Thorlabs.MotionControl.TCube.BrushlessMotorCLI">
+      <HintPath>..\Includes\DLLs\x64\Thorlabs.MotionControl.TCube.BrushlessMotorCLI.dll</HintPath>
+    </Reference>
+    <Reference Include="Thorlabs.MotionControl.TCube.BrushlessMotorUI">
+      <HintPath>..\Includes\DLLs\x64\Thorlabs.MotionControl.TCube.BrushlessMotorUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Thorlabs.MotionControl.TCube.DCServoCLI">
+      <HintPath>..\Includes\DLLs\x64\Thorlabs.MotionControl.TCube.DCServoCLI.dll</HintPath>
+    </Reference>
+    <Reference Include="Thorlabs.MotionControl.TCube.DCServoUI">
+      <HintPath>..\Includes\DLLs\x64\Thorlabs.MotionControl.TCube.DCServoUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Thorlabs.MotionControl.Tools.Common">
+      <HintPath>..\Includes\DLLs\x64\Thorlabs.MotionControl.Tools.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Thorlabs.MotionControl.Tools.Logging">
+      <HintPath>..\Includes\DLLs\x64\Thorlabs.MotionControl.Tools.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Thorlabs.MotionControl.Tools.WPF">
+      <HintPath>..\Includes\DLLs\x64\Thorlabs.MotionControl.Tools.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Thorlabs.MotionControl.Tools.WPF.UI">
+      <HintPath>..\Includes\DLLs\x64\Thorlabs.MotionControl.Tools.WPF.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.Benchtop.BrushlessMotor.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.Benchtop.BrushlessMotorCLI.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.Benchtop.BrushlessMotorUI.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.Benchtop.NanoTrak.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.Benchtop.Piezo.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.Benchtop.StepperMotor.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.DeviceManager.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.DeviceManagerCLI.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.DeviceManagerUI.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.GenericMotorCLI.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.GenericMotorUI.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.IntegratedStepperMotors.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.KCube.DCServo.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\ThorLabs.MotionControl.KCube.DCServoCLI.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.KCube.DCServoUI.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.ModularRack.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.ModularRackCLI.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.PrivateInternal.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.TCube.BrushlessMotor.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.TCube.BrushlessMotorCLI.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.TCube.BrushlessMotorUI.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.TCube.DCServo.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.TCube.DCServoCLI.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.TCube.DCServoUI.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.Tools.Common.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.Tools.Logging.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.Tools.WPF.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\DLLs\x64\Thorlabs.MotionControl.Tools.WPF.UI.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\Thorlabs.MotionControl.IntegratedStepperMotors.h">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\ThorLabs.MotionControl.ModularRack.h">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\Thorlabs.MotionControl.ModularRack.NanoTrak.h">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Includes\Thorlabs.MotionControl.TCube.DCServo.h">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
